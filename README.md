@@ -17,3 +17,25 @@ Com o git rebase também é possível juntar diversos commits em um único.
 * Criou uma branch para si a partir da branch principal, logo, a branch que você criou está atualizada. Mas, houve algum imprevisto e ficou sem desenvolver por um tempo e, consequentemente, sem atualizar a sua branch. O time atualizou a branch principal, logo, quando você for tentar subir as suas alterações para a branch principal, terá conflito.
 
 ![Exemplo](Git-Img-2.PNG)
+
+## Git Cherry Pick
+
+O git cherry pick é um comando que copia um commit específico de uma branch para outra.
+
+![afterCherryPick](AfterCherryPick.png)
+
+### Principais usos
+* Replicar um commit no branch atual, porém mantendo o commit original sem alterações.
+* Projetos grandes onde há muitos desenvolvedores trabalhando no mesmo código. 
+
+### Exemplos
+
+* Há um commit que você deseja levar para outra ramificação, fazendo assim uma cópia.
+* Procura pelo ID do commit que será copiado na sua respectiva branch.
+![GitLog](gitLog.PNG)
+
+* Há também a possíbilidade de pegar todos os commits da branch:
+![gitCherryPickAll](gitCherryPickAll.PNG)
+
+* Ou um intervalo de commits:
+![gitCherryPickBreak](gitCherryPickBreak.PNG)
